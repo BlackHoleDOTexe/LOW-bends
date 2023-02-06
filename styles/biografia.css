@@ -1,0 +1,58 @@
+
+body{
+    background-image: url(/img/background-colored.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.container .content{
+    background: var(--content-color);
+    padding: 10px;
+    border-style: groove;
+    margin-bottom: 5vh;
+}
+.container .content h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Poiret One', cursive;
+    margin-top: 10px;
+}
+
+.container .content .text-block {
+    padding: 50px;
+    text-align: center;
+}
+
+.container .content .text-block h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poiret One', cursive;
+    font-style: italic;
+
+}
+.container .content .text-block p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poiret One', cursive;
+}
+
+.container .content .text-block img{
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    align-self: center;
+    
+}
+

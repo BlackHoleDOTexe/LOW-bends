@@ -1,0 +1,126 @@
+
+html,body{
+    height: 100vh;
+}
+
+body{
+
+    background-image: url("/img/background-colored.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content{
+    padding: 3vh;
+}
+
+.event-list h1{
+    padding: 20px 20px 20px 0px;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-left: 2%;
+    font-family: 'Poiret One', cursive;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.event-list{
+    max-width: 80vw;
+    min-height: 70vh;
+    background: var(--content-color);
+    box-shadow: 2px 2px 4px black;
+    margin: 0 auto;
+}
+
+.header-event-list{
+    display: flex;
+    padding: 5px 0;
+    list-style-type: none;
+    color: var(--color-primary);
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-data{
+    width: 85px;
+    text-align: center;
+}
+.header-event{
+    width: 160px;
+    text-align: center;
+}
+.header-local{
+    width: 200px;
+    text-align: center;
+}
+.header-city{
+    width: 120px;
+    text-align: center;
+}
+
+/*agenda completa css*/
+.agenda-completa{
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.event-data{
+    width: 85px;
+    height: auto;
+    padding: 5px;
+}
+.event-info{
+
+    width: 160px;
+    height: auto;
+    padding: 5px;
+}
+.event-local{
+
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
+.event-city{
+
+    width: 120px;
+    height: auto;
+    padding: 5px;
+    
+}
+
+@media screen and (max-width:620px){
+    .event-list h1{
+        padding: 15px 15px 15px 0px;
+        margin-top: 30px;
+        font-size: 22px;
+        margin-left: 1%;
+    }
+    .event-list{
+        max-width: 80vw;
+        min-height: 75vh;
+    }
+    .header-event-list{
+        display: none;
+    }
+    .agenda-completa{
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .event-data , .event-info , .event-local , .event-city{
+        width: 100%;
+    }
+
+    .agenda-completa{
+        font-size: 12px;
+    }
+}

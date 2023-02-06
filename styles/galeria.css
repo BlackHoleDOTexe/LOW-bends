@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*background-image: url(/img/background-colored.PNG);*/
+    background-color: #363014;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*******
+* PHOTOS
+*******/
+
+.photos .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    background-color: var(--content-color);
+    box-shadow: 0 0 10px black;
+}
+
+.photos .container .content .small_img{
+    width: 325px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.photos .container .content{
+    width: 325px;
+    height: 300px;
+    position: relative;
+}
+
+#modal_img{
+    
+    transform: scale(0);
+    transition: all linear .3s;
+}
+
+.modal_active #modal_img{
+    transform: scale(1);
+}
+.modal{
+
+    width: 100vw;
+    height: 100vh;
+    margin-top: -1%;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+
+.modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#bt_close{
+    color:#fff;
+    background-color: #000;
+    position: absolute;
+    top:10px;
+    right: 50px;
+    padding: 5px 10px;
+    font-size: 25px;
+    border:solid 1px #fff;
+    transition: all ease-out .4s;
+    cursor: pointer;
+}
+#bt_close:hover{
+    background-color: #f00;
+}
+
+.modal_active{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+@media (max-width: 1300px){
+    .photos .container{
+        flex-wrap: nowrap;
+        height: max-content;
+        width: 325px;
+        flex-direction: column;
+    }
+
+    .modal_active #modal_img{
+        width: 100vw;
+    }
+    
+    
+}
+
+/*******
+* VIDEOS
+*******/
+
+.videos .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    background-color: var(--content-color);
+    box-shadow: 0 0 10px black;
+}
+
+.videos .container .content{
+    width: 325px;
+    height: 300px;
+}
+
+.videos .container .content iframe{
+    width: 325px;
+    height: 300px;
+}
+
+@media (max-width: 1300px){
+    .videos .container{
+        flex-wrap: nowrap;
+        width: 325px;
+        height: max-content;
+        flex-direction: column;
+    }
+}
